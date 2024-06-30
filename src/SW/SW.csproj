@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <PackageId>SwaggerWrapper</PackageId>
+        <Description>
+            SwaggerWrapper simplifies the integration of OpenAPI and Swagger documentation in ASP.NET Core applications, offering easy setup and customization of API documentation
+        </Description>
+        <Authors>Ahsan Joyia</Authors>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <Company>InnovatorBrains</Company>
+        <RepositoryUrl>https://github.com/iamAhsanMalik/SwaggerWrapper</RepositoryUrl>
+        <PackageTags>
+            Swagger, OpenApi, Swabuckle
+        </PackageTags>
+        <PackageIcon>Innovator Brains Website Dark Logo.png</PackageIcon>
+        <Title>Swagger Wrapper</Title>
+        <Version>1.0.0</Version>
+        <PackageProjectUrl>https://github.com/iamAhsanMalik/SwaggerWrapper</PackageProjectUrl>
+        <Copyright>Copyright @2024 - InnovatorBrains</Copyright>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <None Include="..\..\LICENSE">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <None Include="..\..\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <None Include="..\..\.github\Innovator Brains Website Dark Logo.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+</Project>
